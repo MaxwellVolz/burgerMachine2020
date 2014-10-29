@@ -57,7 +57,7 @@ var a1order = [{
     pickles: "0",
     tomatoes: "0"},
     {
-    cheese: "0",
+    cheese: "2",
     drink: "",
     fry: "",
     patties: "2",
