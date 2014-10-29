@@ -19,7 +19,7 @@ var order1 = "";
 var bagAmount = 0;
 var myVar = {};
 
-var count=30;
+var count=45;
 var counter=setInterval(startTimer, 1000); //1000 will  run it every 1 second
 
 
