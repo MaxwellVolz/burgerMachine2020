@@ -44,7 +44,7 @@ var a1order = [{
     {
     cheese: "2",
     drink: "",
-    fry: "large",
+    fry: "",
     patties: "2",
     pickles: "2",
     tomatoes: "0"},
