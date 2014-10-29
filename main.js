@@ -19,11 +19,16 @@ var order1 = "";
 var bagAmount = 0;
 var myVar = {};
 
+var count=30;
+var counter=setInterval(startTimer, 1000); //1000 will  run it every 1 second
+
 
 $(window).bind("load", function () {
 
     order1 = a1text;
     currentOrder = a1order[0];
+
+    startTimer();
 
     makeOrder();
 });
@@ -145,13 +150,13 @@ function burgerSelections(){
 
 
         $('div.burgerBag:nth-child(2)').animate({
-                'opacity':'1.0',
-                'height':'100%'
-            }, 300, function() {
-                // Animation complete.
-            });
-        };
-        ++i;
+            'opacity':'1.0',
+            'height':'100%'
+        }, 300, function() {
+            // Animation complete.
+        });
+    };
+    ++i;
 
     switch(orders.drink){
         case "":
@@ -208,15 +213,15 @@ function makeOrder() {
         $('div.statusText h1').css("color","gold");}, 2000);
 
     /*
-    currentOrder = {
-        cheese: "2",
-        drink: "large",
-        fry: "small",
-        patties: "2",
-        pickles: "0",
-        tomatoes: "0"
-    }
-    */
+     currentOrder = {
+     cheese: "2",
+     drink: "large",
+     fry: "small",
+     patties: "2",
+     pickles: "0",
+     tomatoes: "0"
+     }
+     */
     $('div.orderText h1').empty();
 
     // newText = order1;
@@ -316,4 +321,19 @@ function destroyBags(){
     }, 300, function() {
         // Animation complete.
     });
+}
+
+function startTimer()
+{
+    count=count-1;
+    $('div.timer h2').html(count);
+    if (count <= 0)
+    {
+        clearInterval(counter);
+        //counter ended, do something here
+        console.log("game over dude.")
+        return;
+    }
+
+    //Do code for showing the number of seconds here
 }
