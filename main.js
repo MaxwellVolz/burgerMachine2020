@@ -13,7 +13,7 @@ var orders = {
     pickles: "0",
     tomatoes: "0"
 };
-var orderTicker = 1;
+var orderTicker = 0;
 var currentOrder = {};
 var order1 = "";
 var bagAmount = 0;
@@ -287,15 +287,18 @@ function checkOrder(){
             $('div.statusText h1').html("Success");
             $('div.statusText h1').css("color","lime");
 
+            ++orderTicker;
+
             order1 = a1text[orderTicker];
             currentOrder = [];
             currentOrder = a1order[orderTicker];
 
             console.log(currentOrder);
             ticker = 0;
+
+
             makeOrder();
             destroyBags();
-            ++orderTicker;
 
 
         }

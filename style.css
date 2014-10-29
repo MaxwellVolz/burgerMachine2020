@@ -217,7 +217,8 @@ div.darkBox{
     background-color:white;
     z-index:-5;
 }
-h1{
+div.statusText h1{
+    text-align:center;
 
 }
 h2{
