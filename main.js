@@ -246,7 +246,7 @@ function printer(order){
             clearInterval(myVar);
         }
         ++ticker;
-    }, 100);
+    }, 50);
 
 
 
