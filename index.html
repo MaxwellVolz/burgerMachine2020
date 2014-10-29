@@ -16,59 +16,61 @@
 
 <body>
 
+<div class="gameWindow">
+    <div class="gameContainer">
+        <div class="screenSec">
+            <div class="screen">
+                <div class="orderText"><h1></h1></div>
+            </div>
+        </div>
+        <div class="peepSec">
+            <div class="eject"></div>
+            <div class="statusBox">
+                <div class="statusText"><h1>Incoming</h1></div>
 
-<div class="gameContainer">
-    <div class="screenSec">
-        <div class="screen">
-            <div class="orderText"><h1></h1></div>
+            </div>
+            <div class="timer">
+                <h2>45</h2>
+            </div>
         </div>
-    </div>
-    <div class="peepSec">
-        <div class="eject"></div>
-        <div class="statusBox">
-            <div class="statusText"><h1>Incoming</h1></div>
-
+        <div class="menuSec">
+            <div class="menuBox">
+                <div class="menuItem" id="fryItem"></div>
+                <div class="menuItem" id="burgerItem"></div>
+                <div class="menuItem" id="drinkItem"></div>
+            </div>
         </div>
-        <div class="timer">
-            <h2>45</h2>
+        <div class="buttonSec">
+            <div class="btnCol" id="col1">
+                <div class="btn" id="small"><img src="icons/small.png"><div class="lightBox2"></div></div>
+                <div class="btn" id="medium"><img src="icons/medium.png"><div class="lightBox2"></div></div>
+                <div class="btn" id="large"><img src="icons/large.png"><div class="lightBox2"></div></div>
+            </div>
+            <div class="midBtnCol">
+                <div class="btn"><img src="icons/pattie.png"><div class="lightBox"></div></div><div class="burgAmt"><h3 id="patties">0</h3><div class="darkBox"></div></div>
+                <div class="btn"><img src="icons/cheese.png"><div class="lightBox"></div></div><div class="burgAmt"><h3 id="cheese">0</h3><div class="darkBox"></div></div>
+                <div class="btn"><img src="icons/pickles.png"><div class="lightBox"></div></div><div class="burgAmt"><h3 id="pickles">0</h3><div class="darkBox"></div></div>
+                <div class="btn"><img src="icons/tomato.png"><div class="lightBox"></div></div><div class="burgAmt"><h3 id="tomatoes">0</h3><div class="darkBox"></div></div>
+                <div class="btn"></div><div class="burgAmt"></div>
+                <div class="btn"></div><div class="burgAmt"></div>
+            </div>
+            <div class="btnCol" id="col3">
+                <div class="btn" id="small"><img src="icons/small.png"><div class="lightBox2"></div></div>
+                <div class="btn" id="medium"><img src="icons/medium.png"><div class="lightBox2"></div></div>
+                <div class="btn" id="large"><img src="icons/large.png"><div class="lightBox2"></div></div>
+            </div>
         </div>
-    </div>
-    <div class="menuSec">
-        <div class="menuBox">
-            <div class="menuItem" id="fryItem"></div>
-            <div class="menuItem" id="burgerItem"></div>
-            <div class="menuItem" id="drinkItem"></div>
+        <div class="generateSec">
+            <div class="genBtn"></div>
+            <div class="lightBox3"></div>
+            <div class="dropZone">
+                <div class="burgerBag"></div>
+                <div class="burgerBag"></div>
+                <div class="burgerBag"></div>
+                <div class="dropZoneCover"></div>
+            </div>
         </div>
-    </div>
-    <div class="buttonSec">
-        <div class="btnCol" id="col1">
-            <div class="btn" id="small"><img src="icons/small.png"><div class="lightBox2"></div></div>
-            <div class="btn" id="medium"><img src="icons/medium.png"><div class="lightBox2"></div></div>
-            <div class="btn" id="large"><img src="icons/large.png"><div class="lightBox2"></div></div>
-        </div>
-        <div class="midBtnCol">
-            <div class="btn"><img src="icons/pattie.png"><div class="lightBox"></div></div><div class="burgAmt"><h3 id="patties">0</h3><div class="darkBox"></div></div>
-            <div class="btn"><img src="icons/cheese.png"><div class="lightBox"></div></div><div class="burgAmt"><h3 id="cheese">0</h3><div class="darkBox"></div></div>
-            <div class="btn"><img src="icons/pickles.png"><div class="lightBox"></div></div><div class="burgAmt"><h3 id="pickles">0</h3><div class="darkBox"></div></div>
-            <div class="btn"><img src="icons/tomato.png"><div class="lightBox"></div></div><div class="burgAmt"><h3 id="tomatoes">0</h3><div class="darkBox"></div></div>
-            <div class="btn"></div><div class="burgAmt"></div>
-            <div class="btn"></div><div class="burgAmt"></div>
-        </div>
-        <div class="btnCol" id="col3">
-            <div class="btn" id="small"><img src="icons/small.png"><div class="lightBox2"></div></div>
-            <div class="btn" id="medium"><img src="icons/medium.png"><div class="lightBox2"></div></div>
-            <div class="btn" id="large"><img src="icons/large.png"><div class="lightBox2"></div></div>
-        </div>
-    </div>
-    <div class="generateSec">
-        <div class="genBtn"></div>
-        <div class="lightBox3"></div>
-        <div class="dropZone">
-            <div class="burgerBag"></div>
-            <div class="burgerBag"></div>
-            <div class="burgerBag"></div>
-            <div class="dropZoneCover"></div>
-        </div>
+        <div class="outdoors"></div>
     </div>
 </div>
 <script src="ordersDB.js"></script>

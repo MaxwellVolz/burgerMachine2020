@@ -19,7 +19,7 @@ var order1 = "";
 var bagAmount = 0;
 var myVar = {};
 
-var count=45;
+var count=5;
 var counter=setInterval(startTimer, 1000); //1000 will  run it every 1 second
 
 
@@ -334,7 +334,12 @@ function startTimer()
     {
         clearInterval(counter);
         //counter ended, do something here
-        console.log("game over dude.")
+        console.log("game over dude.");
+        $("div.gameContainer").animate({
+            'top':'-1000px'
+        }, 3000, function() {
+            // Animation complete.
+        });
         return;
     }
 
