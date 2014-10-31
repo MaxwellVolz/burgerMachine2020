@@ -19,7 +19,7 @@ var order1 = "";
 var bagAmount = 0;
 var myVar = {};
 
-var count=5;
+var count=3;
 var counter=setInterval(startTimer, 1000); //1000 will  run it every 1 second
 
 
@@ -339,6 +339,11 @@ function startTimer()
             'top':'-1000px'
         }, 3000, function() {
             // Animation complete.
+        });
+        $('div.phoneContainer').animate({
+            'top':'210px'
+        },3200,function(){
+
         });
         return;
     }

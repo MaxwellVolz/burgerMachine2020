@@ -370,3 +370,23 @@ div.outdoors{
 
     background: url('backgrounds/beachScene.png') top left;
 }
+div.phoneContainer{
+    position:absolute;
+    top:1010px;
+    left:20px;
+    height:800px;
+    width:600px;
+}
+div.screenBack {
+    position: absolute;
+    height: 800px;
+    width: 600px;
+    background: url('backgrounds/screenBack.png');
+}
+div.screenGloss{
+    position: absolute;
+    height: 800px;
+    width: 600px;
+    top:0px;
+    background: url('backgrounds/screenGloss.png');
+}
