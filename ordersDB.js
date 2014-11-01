@@ -131,7 +131,7 @@ var a3text = [
     "Hi. I would like a Triple Cheeseburger with Pickles.",
     "Double Double Burger. That's it.",
     "Hey. Hey. One Small Fry. One Small Drink. One Burger. Please",
-    "Yo. Can I have a Burger with Double Cheese and Pickles and Double Tomato.",
+    "Yo. Can I have a Burger with Double Cheese and Pickles and Double Tomato?",
     "I would like a Burger with As Many Pickles as you can fit on it.",
     "One Quad Cheeseburger with Small Fries.",
     "I want a Large Fry, a Large Drink, and a Triple Burger with Triple Pickle and Triple Tomato."];
