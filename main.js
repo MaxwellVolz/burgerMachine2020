@@ -18,8 +18,9 @@ var currentOrder = {};
 var order1 = "";
 var bagAmount = 0;
 var myVar = {};
+var dayTicker = 0;
 
-var count=3;
+var count=30;
 var counter=setInterval(startTimer, 1000); //1000 will  run it every 1 second
 
 
@@ -335,14 +336,19 @@ function startTimer()
         clearInterval(counter);
         //counter ended, do something here
         console.log("game over dude.");
+
         $("div.gameContainer").animate({
             'top':'-1000px'
         }, 3000, function() {
             // Animation complete.
+            ++dayTicker;
+            $('div.dayStat h2').html("Day " + dayTicker);
+            $('div.cashStat h2').html("Cash Earned: " + orderTicker*5);
+            $('div.ordersCompletedStat h2').html("Orders Completed: " + orderTicker)
         });
         $('div.phoneContainer').animate({
             'top':'210px'
-        },3200,function(){
+        },2400,function(){
 
         });
         return;
